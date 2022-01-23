@@ -1,4 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Playball&family=Poppins&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Poppins, sans-serif;
+}
+.login {
+    height: 100vh;
+    width: 100%;    
+}
+
 .logo {
     font-family: Playball, cursive;
     margin: 2rem;
+}
+
+a{
+    color: rgba(1, 186, 179, 1.0);
+}
+.left-side{
+    width: 40%;
+    right: 0;
+    background: #fff;
+}
+
+.right-side{
+    width: 60%;
+    left: 0;
+    background: rgba(1, 186, 179, 1.0);
+}
+
+.person-img{
+    width: 100%;
+    height:500px;
+    float: right;
+    margin-top: 0;
 }
