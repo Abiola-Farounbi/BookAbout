@@ -1,9 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Playball&family=Poppins&display=swap');
 
 /*Colors go here*/
-:root {
 
-}
 * {
     box-sizing: border-box;
     margin: 0;
@@ -68,7 +66,7 @@ ul {
 
 .logo {
     font-family: Playball, cursive;
-    margin: 1rem;
+    margin: 2.9rem;
 }
 /*Home Page */
 .home-page {
