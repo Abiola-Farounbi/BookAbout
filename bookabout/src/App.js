@@ -1,5 +1,6 @@
 import './App.css';
 import {Home} from './pages/Home/Home';
+import {SignIn} from "./pages/Register/Register";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -9,6 +10,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route index path='/' element={<Home />} />
+          <Route index path='/' element={<SignIn />} />
         </Routes>
       </BrowserRouter>
     </div>
