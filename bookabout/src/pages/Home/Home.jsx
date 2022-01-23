@@ -1,38 +1,41 @@
 import React from "react";
 import "../../App.css";
 import "./Home.scss";
+import homevector from '../../resources/homepageimage.png';
 
 export const Home = () => {
     return (
         <div>
+          <header>
+          <h1 className="logo">BookAbout</h1>
              <nav id="navbar" className="nav">
             <ul className="nav-list">
-              <li><a href="/index.html">Home</a></li>
+              <li><a href="">Home</a></li>
               <li><a href="#">Chat</a></li>
               <li><a href="#">Explore</a></li>
               <li><a href="#">Books</a></li>
               <li><a href="#">Register</a></li>
             </ul>
           </nav>
-          <h1 className="logo">BookAbout</h1>
+          </header>
         <div id="page-wrapper">
             <div className="home-page">
-            
-                <div className="tag-line">
-                    <h1 className="tag-line">Connect with book lovers with similiar <br /> interests from around the world</h1>
+                <div className="part1">
+                    <p className="tag-line">Connect with book lovers with similiar <br /> interests from around the world</p>
+                    <div className="search-container">
+                        <input className="searchbar" placeholder="Search.." name="search" /> <br/>
+                       <button className="searchbutton">
+                       <a href="/explore.html" > Search </a>
+                        </button> 
+                     </div>
                 </div>    
-                
-                <div className="home-img">
+                <div className="part2">
                     <img 
                         className="home-img"
-                        src="../../resources/homepageimage.png"
-                        alt="" />
+                        src={homevector}
+                        alt="Image of people together" />
                 </div>
                 {/* search bar */}
-                <div className="search-container">
-                        <input className="searchbar" placeholder="Search.." name="search" />
-                        <a href="/explore.html" className="button"><i className="fa fa-search"></i></a>
-                </div>
                 </div>
         </div>
      </div>
